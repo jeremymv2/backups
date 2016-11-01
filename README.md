@@ -60,7 +60,7 @@ supermarket-ctl restart
 
 Chef Automate backup operations are easy.
 
-# Backup
+## Backup
 ```
 vagrant@automate-server:~$ sudo delivery-ctl backup-data
  [Delivery Backup] Create backup directory '/var/tmp/delivery-backup-2016-11-01T1140.HFiC'
@@ -72,7 +72,7 @@ vagrant@automate-server:~$ sudo delivery-ctl backup-data
 vagrant@automate-server:~$
 ```
 
-# Restore and other operations
+## Restore and other operations
 ```
 delivery-ctl Backup Commands:
   create-backup
