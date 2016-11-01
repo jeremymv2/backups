@@ -55,3 +55,32 @@ sudo -u supermarket /opt/supermarket/embedded/bin/psql supermarket < supermarket
 supermarket-ctl reconfigure
 supermarket-ctl restart
 ```
+
+# Chef Automate
+
+Chef Automate backup operations are easy.
+
+# Backup
+```
+vagrant@automate-server:~$ sudo delivery-ctl backup-data
+ [Delivery Backup] Create backup directory '/var/tmp/delivery-backup-2016-11-01T1140.HFiC'
+ [Delivery Backup] Capturing database dump
+ [Delivery Backup] Copying git repositories
+ [Delivery Backup] Copying config files
+ [Delivery Backup] Writing backup to '/var/tmp/delivery-backup-2016-11-01T1140.HFiC/delivery_backup.tar'
+ [Delivery Backup] Completed!
+vagrant@automate-server:~$
+```
+
+# Restore and other operations
+```
+delivery-ctl Backup Commands:
+  create-backup
+    Create a Chef Automate backup
+  delete-backups
+    Delete one or many Chef Automate backups
+  list-backups
+    List known Chef Automate backups
+  restore-backup
+    Restore a Chef Automate backup
+```
